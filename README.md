@@ -1,71 +1,20 @@
-# no-involution README
+# 反内卷
 
-This is the README for your extension "no-involutionvscode-plugin-no-involution". After writing up a brief description, we recommend including the following sections.
+一个平平无奇的反内卷插件
 
-## Features
+## 功能
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+### 非上班时间保存限制
 
-For example if there is an image subfolder under your extension project workspace:
+如果您在非上班时间保存代码，会提示“现在是下班时间！”并弹出输入框，您必须正确地输入当前工作区名称才能成功保存代码，如果您试图关闭输入框或者不输入名称，则会清空即将保持的文件，请谨慎操作~
 
-\!\[feature X\]\(images/feature-x.png\)
+### 工作收尾阶段
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+您可以在设置中设置上班的时分与下班的时分，并设置工作收尾阶段的小时时长，在收尾阶段不会对您的代码操作做任何限制，只是会在 vscode 底部状态栏提示反内卷语录，对您进行精神鼓舞~
 
-## Requirements
+### Git Hook Pre-commit
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-- `myExtension.enable`: enable/disable this extension
-- `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-- [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-- Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-- Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-- Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-- [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-- [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+设置中为您提供了下班时间禁止 commit 代码的选项，默认是关闭的，开启后，在下班时间会禁止 commit 代码，但您仍然可以通过` --no-verify`绕过<br />
+注意，如果你项目本身存在 pre-commit 钩子的话，打开这个选项会覆盖原有钩子
 
 **Enjoy!**
