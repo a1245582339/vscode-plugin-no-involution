@@ -95,6 +95,10 @@ if (nowSeconds < startSeconds || nowSeconds > endSeconds) {
 function removePreCommit() {
   if (workspace.workspaceFolders?.length) {
     const hooksUri = Uri.joinPath(workspace.workspaceFolders![0].uri, '/.git/hooks');
-    workspace.fs.delete(Uri.joinPath(hooksUri, 'pre-commit'));
+    try {
+      workspace.fs.delete(Uri.joinPath(hooksUri, 'pre-commit'));
+    } catch (error) {
+      console.log(error);
+    }
   }
 }
