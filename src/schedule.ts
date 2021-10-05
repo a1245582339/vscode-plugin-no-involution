@@ -40,6 +40,7 @@ export const subscribeSchedule = (config: ReturnType<typeof getConfig>) => {
     function endingCb() {
       saveDisposable && saveDisposable.dispose();
       setStatusBar();
+      window.showInformationMessage('已进入今日工作收尾阶段，请尽快收尾手中工作，准备下班。');
     }
 
     function endCb() {
