@@ -4,7 +4,7 @@
 	"description": "拒绝加班，拒绝内卷",
 	"publisher": "lzp",
 	"repository": {},
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"engines": {
 		"vscode": "^1.60.0"
 	},
