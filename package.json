@@ -1,10 +1,10 @@
 {
 	"name": "vscode-plugin-no-involution",
 	"displayName": "反内卷",
-	"description": "",
+	"description": "拒绝加班，拒绝内卷",
 	"publisher": "lzp",
 	"repository": {},
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"engines": {
 		"vscode": "^1.60.0"
 	},
@@ -13,7 +13,7 @@
 		"躺平",
 		"involution"
 	],
-	"icon": "https://z3.ax1x.com/2021/10/05/4vKLlj.png",
+	"icon": "icon.png",
 	"categories": [
 		"Other"
 	],
