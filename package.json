@@ -2,10 +2,18 @@
 	"name": "vscode-plugin-no-involution",
 	"displayName": "反内卷",
 	"description": "",
-	"version": "0.0.1",
+	"publisher": "lzp",
+	"repository": {},
+	"version": "0.0.2",
 	"engines": {
 		"vscode": "^1.60.0"
 	},
+	"keywords": [
+		"内卷",
+		"躺平",
+		"involution"
+	],
+	"icon": "https://z3.ax1x.com/2021/10/05/4vKLlj.png",
 	"categories": [
 		"Other"
 	],
